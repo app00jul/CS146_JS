@@ -1,3 +1,7 @@
+$('#CAL103_checkbox').prop('checked', true);
+$('#CS115_checkbox').prop('checked', true);
+$('#CS146_checkbox').prop('checked', true);
+$('#PEP111_checkbox').prop('checked', true);
 $(function(){
     /*For CAL103*/
     $("#CAL103_checkbox").click(function(event){
