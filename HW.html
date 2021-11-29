@@ -3,14 +3,12 @@
     Pledge: I pledge my honor that I have abided by the Stevens Honor System.
  --> 
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Schedule</title>
 
-    <link href="HW.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="HW.js"></script>
-    
+    <link href="HW.css" type="text/css" rel="stylesheet">    
 </head>
 
 <body>
@@ -19,10 +17,18 @@
     <h2>Please select</h2>
 
     <div class="classes">
-        <div class="class" id="CAL103"><input type="checkbox">CAL103</div>
-        <div class="class" id="CS115"><input type="checkbox">CS115</div>
-        <div class="class" id="CS146"><input type="checkbox">CS146</div>
-        <div class="class" id="PEP111"><input type="checkbox">PEP111</div>
+        <div class="class" id="CAL103">
+            <input type="checkbox" id="CAL103_checkbox">
+            CAL103</div>
+        <div class="class" id="CS115">
+            <input type="checkbox" id="CS115_checkbox">
+            CS115</div>
+        <div class="class" id="CS146">
+            <input type="checkbox" id="CS146_checkbox">
+            CS146</div>
+        <div class="class" id="PEP111">
+            <input type="checkbox" id="PEP111_checkbox">
+            PEP111</div>
     </div>
 
     <div class="table">
@@ -36,19 +42,19 @@
         </div>
         <div class="time_frame">
             <span class="time">09:00 - 09:30</span>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_0">PEP111</p></div>
             <div class="task"></div>
             <div class="task"></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_1">PEP111</p></div>
         </div>
         <div class="time_frame">
-            <span class="time">9:30 - 10:00</span>
+            <span class="time">09:30-10:00</span>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_2">Lecture</p></div>
             <div class="task"></div>
             <div class="task"></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_3">Lecture</p></div>
         </div>
         <div class="time_frame">
             <span class="time">10:00 - 10:30</span>
@@ -68,19 +74,19 @@
         </div>
         <div class="time_frame">
             <span class="time">11:00 - 11:30</span>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_0">CS115 </p></div>
             <div class="task"></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_1">CS115 </p></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_2">CS115 </p></div>
         </div>
         <div class="time_frame">
             <span class="time">11:30 - 12:00</span>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_3">Lecture </p></div>
             <div class="task"></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_4">Lecture </p></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_5">Lecture </p></div>
         </div>
         <div class="time_frame">
             <span class="time">12:00 - 12:30</span>
@@ -100,17 +106,17 @@
         </div>
         <div class="time_frame">
             <span class="time">13:00 - 13:30</span>
+            <div class="task"><p class="CAL103_selected" id="CAL103_selected_0">CAL103 </p></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CAL103_selected" id="CAL103_selected_1">CAL103 </p></div>
             <div class="task"></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
             <span class="time">13:30 - 14:00</span>
+            <div class="task"><p class="CAL103_selected" id="CAL103_selected_2">Lecture </p></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CAL103_selected" id="CAL103_selected_3">Lecture </p></div>
             <div class="task"></div>
             <div class="task"></div>
         </div>
@@ -141,25 +147,25 @@
         <div class="time_frame">
             <span class="time">15:30 - 16:00</span>
             <div class="task"></div>
+            <div class="task"><p class="CS146_selected" id="CS146_selected_0">CS146 </p></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CS146_selected" id="CS146_selected_1">CS146 </p></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
             <span class="time">16:00 - 16:30</span>
             <div class="task"></div>
+            <div class="task"><p class="CS146_selected" id="CS146_selected_2">Lecture </p></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CS146_selected" id="CS146_selected_3">Lecture </p></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
             <span class="time">16:30 - 17:00</span>
             <div class="task"></div>
+            <div class="task"><p class="CS146_selected" id="CS146_selected_4"></p></div>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CS146_selected" id="CS146_selected_5"></p></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
@@ -190,42 +196,44 @@
             <span class="time">18:30 - 19:00</span>
             <div class="task"></div>
             <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_6"></p></div>
             <div class="task"></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
             <span class="time">19:00 - 19:30</span>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_4"></p></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_7">CS115 </p></div>
             <div class="task"></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
             <span class="time">19:30 - 20:00</span>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_5">PEP111 </p></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_8">Lab </p></div>
             <div class="task"></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
             <span class="time">20:00 - 20:30</span>
             <div class="task"></div>
-            <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_6">Recitation </p></div>
+            <div class="task"><p class="CS115_selected" id="CS115_selected_9"></p></div>
             <div class="task"></div>
             <div class="task"></div>
         </div>
         <div class="time_frame">
             <span class="time">20:30 - 21:00</span>
             <div class="task"></div>
-            <div class="task"></div>
+            <div class="task"><p class="PEP111_selected" id="PEP111_selected_7"></p></div>
             <div class="task"></div>
             <div class="task"></div>
             <div class="task"></div>
         </div>
     </div>
-
 </body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="HW.js"></script>
