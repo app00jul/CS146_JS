@@ -1,0 +1,31 @@
+<!-- 
+    Julian Noeske
+    Pledge: I pledge my honor that I have abided by the Stevens Honor System.
+ --> 
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule</title>
+
+    <link href="HW.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="HW.js"></script>
+    
+</head>
+
+<body>
+    <h1 class="title">JULIAN'S WEEKLY SCHEDULE</h1>
+
+    <h3>Please select:</h3>
+
+    <div class="classes">
+        <div class="class" id="CAL103"><input type="checkbox">CAL103</div>
+        <div class="class" id="CS115"><input type="checkbox">CS115</div>
+        <div class="class" id="CS146"><input type="checkbox">CS146</div>
+        <div class="class" id="PEP111"><input type="checkbox">PEP111</div>
+    </div>
+
+    <div class="table">
+        <div> </div>
+    </div>
+</body>
