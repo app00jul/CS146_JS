@@ -101,6 +101,7 @@ h2 {
     width: 100px;
     height: 40px;
     color: white;
+    font-size: 12px;
     background-color: #103783;
     text-align: center;
     display: flex;
@@ -119,4 +120,56 @@ h2 {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+
+/*Selector*/
+/*CAL103*/
+.CAL103_selected{
+    font-size: 15px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #e76f51;
+    width: 100px;
+    height: 40px;
+}
+
+/*CS115*/
+.CS115_selected{
+    font-size: 15px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9c46a;
+    width: 100px;
+    height: 40px;
+}
+/*CS146*/
+.CS146_selected{
+    font-size: 15px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a9d8f;
+    width: 100px;
+    height: 40px;
+}
+
+/*PEP111*/
+.PEP111_selected{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+    width: 100px;
+    height: 40px;
 }
