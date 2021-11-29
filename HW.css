@@ -2,37 +2,34 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #333335;
-    position: sticky;
-    top: 0px;   
-}
-
 .title{
+    vertical-align: top;
     background-image: -webkit-linear-gradient(45deg,#43cea2,#185a9d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 body{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: top;
+    align-items: center;  
 }
 
-h1,h3 {
+body{
+    background-image: url(https://www.pcclean.io/wp-content/uploads/2020/4/JjUjya.jpg);
+    position: sticky;
+    top: 0px; 
+}
+
+h1,h2 {
     margin-bottom: 15px;
 }
 
-.table {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(25, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+h2 {
+    color: white;
 }
 
 .classes{
@@ -41,9 +38,9 @@ h1,h3 {
     padding: 10px;
 }
 
-.classes .classes{
+.classes .class{
     padding: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -51,4 +48,75 @@ h1,h3 {
 #CAL103{
     background-color: #e76f51;
     color: white
+}
+
+#CS115{
+    background-color: #e9c46a;
+    color: white
+}
+
+#CS146{
+    background-color: #2a9d8f;
+    color: white
+}
+
+#PEP111{
+    background-color: #264653;
+    color: white
+}
+
+/*table */
+.table{
+    background: linear-gradient(#ffaf7b, #d76d77, #3a1c71);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.days{
+    display: flex;
+}
+
+.corner{
+    width: 100px;
+    height: 70px;
+    margin: 2px;
+}
+
+.day{
+    width: 100px;
+    border: solid 1px white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.time_frame{
+    display: flex;
+}
+
+.time{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #103783;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.task{
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
