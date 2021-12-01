@@ -2,8 +2,10 @@ $('#CAL103_checkbox').prop('checked', true);
 $('#CS115_checkbox').prop('checked', true);
 $('#CS146_checkbox').prop('checked', true);
 $('#PEP111_checkbox').prop('checked', true);
+
 $(function(){
     /*For CAL103*/
+    /*Show and hide*/
     $("#CAL103_checkbox").click(function(event){
         if ($(this).is(":checked")) {
             $("#CAL103_selected_0").show();
@@ -30,8 +32,9 @@ $(function(){
             $("#CAL103_selected_3").hide();
         }
     })
-
+/*-------------------------------------------------------------------------------------------------*/
     /*For CS115*/
+    /*Show and hide*/
     $("#CS115_checkbox").click(function(event){
         if ($(this).is(":checked")) {
             $("#CS115_selected_0").show();
@@ -93,9 +96,10 @@ $(function(){
         else{
             $("#CS115_selected_9").hide();
         }
-    }) 
-
+    })
+/*-------------------------------------------------------------------------------------------------*/
     /*For CS146*/
+    /*Show and hide*/
     $("#CS146_checkbox").click(function(event){
         if ($(this).is(":checked")) {
             $("#CS146_selected_0").show();
@@ -133,9 +137,10 @@ $(function(){
         else{
             $("#CS146_selected_5").hide();
         }
-    })   
-
+    }) 
+/*-------------------------------------------------------------------------------------------------*/
     /*For PEP111*/
+    /*Show and hide*/
     $("#PEP111_checkbox").click(function(event){
         if ($(this).is(":checked")) {
             $("#PEP111_selected_0").show();
@@ -186,4 +191,35 @@ $(function(){
             $("#PEP111_selected_7").hide();
         }
     })   
+})
+
+$(document).ready(function(){ 
+    /*CAL 103*/
+    $("#CAL103_color_picker").change(function(){ 
+           $("#CAL103").css("background-color", $(this).val());
+    }); 
+    $("#CAL103_color_picker").change(function(){ 
+        $(".CAL103_selected").css("background-color", $(this).val());
+    }); 
+    /*CS 115*/
+    $("#CS115_color_picker").change(function(){ 
+        $("#CS115").css("background-color", $(this).val());
+    }); 
+    $("#CS115_color_picker").change(function(){ 
+        $(".CS115_selected").css("background-color", $(this).val());
+    });
+    /*CS 146*/
+    $("#CS146_color_picker").change(function(){ 
+        $("#CS146").css("background-color", $(this).val());
+    }); 
+    $("#CS146_color_picker").change(function(){ 
+        $(".CS146_selected").css("background-color", $(this).val());
+    });
+    /*PEP 111*/
+    $("#PEP111_color_picker").change(function(){ 
+        $("#PEP111").css("background-color", $(this).val());
+    }); 
+    $("#PEP111_color_picker").change(function(){ 
+        $(".PEP111_selected").css("background-color", $(this).val());
+    });
 })
